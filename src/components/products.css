@@ -1,0 +1,15 @@
+.kcont {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.pr {
+  font-size: 2rem;
+  font-family: "raleway";
+  padding: 2rem;
+}
+.pcont {
+  display: flex;
+  column-gap: 1rem;
+  padding-left: 2rem;
+}

@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=REM:wght@200;300;400;500&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+#logo {
+  width: 6rem;
+  height: 5rem;
+  object-fit: cover;
+}
+body {
+  width: 100vw;
+  margin: 0;
+  min-height: 100vh;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px black solid;
+  width: 100vw;
+  background: linear-gradient(360deg, white, rgb(167, 167, 167)) !important;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#shop-name {
+  font-size: 2rem;
+  font-family: "major mono display";
+  margin-left: 1rem;
+}
+
+.right-top {
+  display: flex;
+  width: 40vw;
+  justify-content: space-evenly;
+}
+.Link {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: "raleway";
+  color: black;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  border-radius: 25px;
+  color: white;
+  background: #000;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "raleway";
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.sbar,
+.sbar:focus {
+  width: 100%;
+  outline: none;
+  height: 2rem;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 1px black solid;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  font-family: "raleway";
+}
+
+#srbutton {
+  height: 2.25rem;
+  border: 1px black solid;
+  width: 4rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-family: "raleway";
+  border-left: none;
+  color: white;
+  background: #000;
+}
+
+.middle {
+  display: flex;
+  width: 40vw;
+  padding-right: 1rem;
+}
+.left-top {
+  padding-right: 1rem;
+  height: 5rem;
+  display: flex;
+}
+.selected,
+.selected:focus {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: "raleway";
+  color: black;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0rem 1.2rem 0rem 1.2rem;
+  outline: none;
+  height: 1.39rem;
+}
+.tcart {
+  font-family: "REM";
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.msgo {
+  display: flex;
+  font-size: 1.5rem;
+  font-family: "raleway";
+  padding-top: 5rem;
+  justify-content: center;
+}
+.tile {
+  font-family: "REM";
+  font-size: 0.9rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  padding-top: 8rem;
+}
+.tt {
+  font-size: 1.7rem;
+  font-family: "REM";
+  padding: 0.5rem 0 0.5rem 0;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.de {
+  width: 67rem;
+  font-family: "REM";
+  font-weight: 300;
+  font-size: 1rem;
+}
+#sn {
+  border: 1px black solid;
+  width: 6rem;
+  height: 2rem;
+  font-family: "raleway";
+  background-color: transparent;
+}
+#sn:hover {
+  color: white;
+  background: black;
+}
+#bbb {
+  padding-top: 0.7rem;
+}
+#truck {
+  font-size: 2rem;
+}
+.fea {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+.wo {
+  font-family: "REM";
+  font-weight: 300;
+}
+.nl {
+  display: flex;
+  justify-content: center;
+  font-family: "REM";
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 1rem;
+}
+.nlc {
+  display: flex;
+  justify-content: center;
+  font-family: "REM";
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0rem 1rem 1rem 1rem;
+}
+#nli {
+  width: 30rem;
+  height: 1.5rem;
+  border: 1px black solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 10px;
+}
+#nli:focus {
+  outline: none;
+}
+#nlb {
+  width: 3rem;
+  height: 1.8rem;
+  border: 1px black solid;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #000;
+}
+
+#sl {
+  font-size: 1.2rem;
+}
+.ib {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter {
+  margin-top: 3rem;
+  background: linear-gradient(360deg, rgb(71, 71, 71), white);
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 9rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.left-footer {
+  font-size: 1.5rem;
+  font-family: "raleway";
+  font-weight: 300;
+  padding-left: 1rem;
+}
+.right-footer {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  width: 10rem;
+}
+footer {
+  border-top: 1px black solid;
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  align-items: center;
+}
+.login-buton {
+  font-size: 0.95rem;
+  font-family: "raleway";
+  color: black;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  border-radius: 25px;
+  color: white;
+  background: #000;
+  height: 2.15rem;
+}
+.k-c-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85vw;
+  margin-right: auto;
+  margin-left: auto;
+  row-gap: 1rem;
+}
+.d-c {
+  display: flex;
+  background: linear-gradient(360deg, white, rgb(226, 226, 226));
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 1000px;
+}
+#c-i {
+  width: 140px;
+  height: 150px;
+  object-fit: cover;
+  border: none;
+}
+
+.opop {
+  margin-right: 1rem;
+}
+.right-bot {
+  display: flex;
+  flex-direction: column;
+}
+#c-t {
+  font-size: 1.5rem;
+}
+#q-q {
+  font-size: 1.1rem;
+  font-family: "raleway";
+}
+#ca-bu {
+  display: flex;
+  margin-top: 1rem;
+}
+#pbc,
+#mbc {
+  background: transparent;
+  width: 2.5rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "raleway";
+  border: 1px solid black;
+}
+#mbc {
+  color: white;
+  background-color: black;
+}
+#trash {
+  font-size: 1.4rem;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  border: none;
+  margin-left: 2rem;
+}
+#dbuto {
+  height: 1.9rem;
+  font-size: 1rem;
+  font-family: "raleway";
+  width: 10rem;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background: #000;
+}
+.haa {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.msgpo {
+  display: flex;
+  font-size: 1.2rem;
+  font-family: "raleway";
+  justify-content: center;
+  color: black;
+}

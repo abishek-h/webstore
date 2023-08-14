@@ -1,0 +1,35 @@
+.category-image {
+  width: 13rem;
+  height: 18rem;
+  object-fit: cover;
+}
+.cont {
+  display: flex;
+  width: 50vw;
+  justify-content: space-around;
+}
+.ing-cont {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+}
+.category-cont {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-family: "raleway";
+  text-decoration: none;
+  color: black;
+}
+.itle {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.fc {
+  font-family: "REM";
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
