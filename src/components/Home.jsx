@@ -11,7 +11,7 @@ export default function Home() {
   const route = useNavigate();
   return (
     <div className="king-cont">
-      <div>
+      <div className="uf-bot">
         <div className="tile"> Shopify a Shopping Destination</div>
         <div className="desc">
           <div className="tt">What can you buy from shopify?</div>

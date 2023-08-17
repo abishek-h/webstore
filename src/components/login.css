@@ -1,16 +1,20 @@
 .kico {
-  width: 100vw;
-  height: 91vh;
+  width: 98.5vw;
+  height: 88vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 0.7rem;
+  border-radius: 15px;
+  background-color: #467d5b;
+  margin-bottom: 0.5rem;
 }
 .sform {
-  margin-top: 10rem;
   border-radius: 10px;
   padding: 1.5rem 1.2rem 2rem 1.2rem;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(320deg, rgb(136, 136, 136), white);
+  background: #e7ddf7;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
@@ -28,7 +32,7 @@ stinp:focus {
   height: 1.1rem;
   padding-bottom: 0.5rem;
   border-radius: 10px;
-  border: 0.1px black solid;
+  border: none;
   outline: none;
   font-size: 1rem;
   font-family: "raleway";

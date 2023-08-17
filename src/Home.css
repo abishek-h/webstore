@@ -40,30 +40,62 @@
   text-decoration: line-through;
 }
 body {
-  background: linear-gradient(360deg, #fff, #d7e1ec 74%);
-  overflow-x: hidden;
+  background: white;
 }
 .buttons-a {
   display: flex;
   column-gap: 0.5rem;
   margin-top: 0.5rem;
 }
-.butto {
+.butto12,
+.butto22 {
   font-family: "raleway";
   border: 1px black solid;
   height: 1.5rem;
 }
-.butto:hover {
+.butto12 {
   color: white;
   background: #000;
+}
+.butto22 {
+  background-color: white;
+  color: black;
 }
 .king-cont {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 91vh;
+  align-items: center;
+  padding-top: 0.7rem;
+  width: 98.5vw;
 }
 .slinks {
   text-decoration: none;
   color: black;
 }
+.tile,
+.desc,
+.tt,
+.de {
+  color: #e7ddf7;
+}
+.uf-bot {
+  background-color: #467d5b;
+  color: #e7ddf7;
+  border-radius: 15px;
+  min-height: 45vh;
+  width: 98.5vw;
+}
+.cart-cont-king {
+  min-height: 88vh;
+  margin-top: 0.7rem;
+  border-radius: 15px;
+  background-color: #467d5b;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 1200px) {
+  .de {
+    width: 90vw;
+  }
+}
+

@@ -13,7 +13,7 @@ export default function Cart() {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.cartitems);
   return (
-    <div>
+    <div className="cart-cont-king">
       <div className="tcart">Shopping Cart</div>
       {items.length !== 0 && (
         <div className="haa">
@@ -31,7 +31,7 @@ export default function Cart() {
         <div>
           <div className="msgo">Oops your cart is empty!</div>
           <div className="msgpo">
-            <Link to={"/category"}>shop now</Link>
+            <Link to={"/category"} id="ghi">shop now</Link>
           </div>
         </div>
       )}

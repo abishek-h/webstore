@@ -35,7 +35,7 @@ export default function Men() {
               </div>
               <div className="buttons-a">
                 <button
-                  className="butto"
+                  className="butto12"
                   onClick={() => {
                     if (user === "") {
                       alert("sign in");
@@ -46,7 +46,7 @@ export default function Men() {
                 >
                   Add to cart
                 </button>
-                <button className="butto">buy now</button>
+                <button className="butto22">buy now</button>
               </div>
             </div>
           );

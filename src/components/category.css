@@ -5,20 +5,23 @@
 }
 .cont {
   display: flex;
-  width: 50vw;
+  width: 60rem;
   justify-content: space-around;
 }
 .ing-cont {
+  margin-top: 0.5rem;
   display: flex;
-  width: 100vw;
+  width: 98.5vw;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  min-height: 88vh;
+
   flex-direction: column;
+  border-radius: 15px;
+  background-color: #467d5b;
+  margin-bottom: 0.5rem;
 }
 .category-cont {
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   font-family: "raleway";
   text-decoration: none;
   color: black;
@@ -26,10 +29,38 @@
 .itle {
   text-align: center;
   font-size: 1.2rem;
+  background-color: black;
+  color: #e7ddf7;
 }
 .fc {
   font-family: "REM";
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 2rem;
+  color: #467d5b;
+  text-align: center;
+}
+.oiwdf {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7ddf7;
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 15px;
+  width: 60rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 1100px) {
+  .oiwdf {
+    width: 25rem;
+  }
+  .itle {
+    width: 20rem;
+  }
+}
+.shrinked-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
 }
