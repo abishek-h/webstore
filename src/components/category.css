@@ -14,8 +14,8 @@
   width: 98.5vw;
   justify-content: center;
   align-items: center;
-  min-height: 88vh;
-
+  height: 89.5%;
+  min-height: 45vh;
   flex-direction: column;
   border-radius: 15px;
   background-color: #467d5b;
@@ -47,8 +47,8 @@
   padding: 1rem 1rem 2rem 1rem;
   border-radius: 15px;
   width: 60rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 1100px) {
   .oiwdf {

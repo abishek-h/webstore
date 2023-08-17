@@ -250,7 +250,7 @@ body {
   width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 27vh;
+  margin-bottom: 1rem;
   height: 9rem;
   border-radius: 15px;
 }
@@ -267,9 +267,14 @@ body {
 }
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 2.5rem;
   align-items: center;
+  color: black;
+  background-color: #e7ddf7;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 98.5vw;
 }
 .login-buton {
   font-size: 0.95rem;

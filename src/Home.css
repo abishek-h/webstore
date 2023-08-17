@@ -66,8 +66,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.7rem;
+  margin-top: 0.7rem;
   width: 98.5vw;
+  background-color: #467d5b;
+  color: #e7ddf7;
+  border-radius: 15px;
+  height: 89%;
+  margin-bottom: 0.5rem;
 }
 .slinks {
   text-decoration: none;
@@ -83,11 +88,12 @@ body {
   background-color: #467d5b;
   color: #e7ddf7;
   border-radius: 15px;
-  min-height: 45vh;
+  /* min-height: 45vh; */
   width: 98.5vw;
+  margin-bottom: 0.5rem;
 }
 .cart-cont-king {
-  min-height: 88vh;
+  height: 88%;
   margin-top: 0.7rem;
   border-radius: 15px;
   background-color: #467d5b;
@@ -98,4 +104,3 @@ body {
     width: 90vw;
   }
 }
-
