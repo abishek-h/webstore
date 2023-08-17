@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import "./login.css";
+import "../App.css";
 import { login } from "../globalvariables/username.js";
 import { useSelector } from "react-redux";
 

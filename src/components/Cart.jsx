@@ -31,7 +31,9 @@ export default function Cart() {
         <div>
           <div className="msgo">Oops your cart is empty!</div>
           <div className="msgpo">
-            <Link to={"/category"} id="ghi">shop now</Link>
+            <Link to={"/category"} id="ghi">
+              shop now
+            </Link>
           </div>
         </div>
       )}

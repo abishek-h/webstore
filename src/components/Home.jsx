@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
-import "../Home.css";
+import "../App.css";
 import { FiTruck, FiClock } from "react-icons/fi";
 import { MdAttachMoney } from "react-icons/md";
 import { AiOutlineReload } from "react-icons/ai";

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./products.css";
+import "../App.css";
 import { useDispatch } from "react-redux";
 import { add } from "../globalvariables/cartSlice.js";
 import { useSelector } from "react-redux";

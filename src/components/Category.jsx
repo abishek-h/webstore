@@ -5,7 +5,7 @@ import mensclothing from "./images/mensclothing.jpg";
 import womensclothing from "./images/womensclothing.jpg";
 import jewel from "./images/jewel.jpg";
 import electronics from "./images/electronics.jpg";
-import "./category.css";
+import "../App.css";
 
 export default function Category() {
   const [width, setwidth] = useState(window.innerWidth);
