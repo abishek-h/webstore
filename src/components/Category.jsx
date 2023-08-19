@@ -1,63 +1,44 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import mensclothing from "./images/mensclothing.jpg";
-import womensclothing from "./images/womensclothing.jpg";
-import jewel from "./images/jewel.jpg";
-import electronics from "./images/electronics.jpg";
 import "../App.css";
 
 export default function Category() {
-  const [width, setwidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const find = () => {
-      setwidth(window.innerWidth);
-    };
-    window.addEventListener("resize", find);
-    return () => {
-      window.removeEventListener("resize", find);
-    };
-  }, [width]);
+  const cate = [
+    { name: "smartphones", id: 1 },
+    { name: "laptops", id: 2 },
+    { name: "fragrances", id: 3 },
+    { name: "skincare", id: 4 },
+    { name: "groceries", id: 5 },
+    { name: "home-decoration", id: 6 },
+    { name: "furniture", id: 7 },
+    { name: "tops", id: 8 },
+    { name: "womens-dresses", id: 9 },
+    { name: "womens-shoes", id: 10 },
+    { name: "mens-shirts", id: 11 },
+    { name: "mens-shoes", id: 12 },
+    { name: "mens-watches", id: 13 },
+    { name: "womens-watches", id: 14 },
+    { name: "womens-bags", id: 15 },
+    { name: "womens-jewellery", id: 16 },
+    { name: "sunglasses", id: 17 },
+    { name: "automotive", id: 18 },
+    { name: "motorcycle", id: 19 },
+    { name: "lighting", id: 20 },
+  ];
   return (
     <div className="ing-cont">
-      <div className="oiwdf">
-        <div className="fc">Featured Categories</div>
-        {width < 1100 && (
-          <div className="shrinked-cat">
-            <Link to="/men" className="category-cont">
-              <div className="itle">Men</div>
-            </Link>
-            <Link to="/women" className="category-cont">
-              <div className="itle">Women</div>
-            </Link>
-            <Link to="/jewels" className="category-cont">
-              <div className="itle">Jewels</div>
-            </Link>
-            <Link to="/electronics" className="category-cont">
-              <div className="itle">Electronics</div>
-            </Link>
-          </div>
-        )}
-        {width > 1100 && (
-          <div className="cont">
-            <Link to="/men" className="category-cont">
-              <img src={mensclothing} className="category-image"></img>
-              <div className="itle">Men</div>
-            </Link>
-            <Link to="/women" className="category-cont">
-              <img src={womensclothing} className="category-image"></img>
-              <div className="itle">Women</div>
-            </Link>
-            <Link to="/jewels" className="category-cont">
-              <img src={jewel} className="category-image"></img>
-              <div className="itle">Jewels</div>
-            </Link>
-            <Link to="/electronics" className="category-cont">
-              <img src={electronics} className="category-image"></img>
-              <div className="itle">Electronics</div>
-            </Link>
-          </div>
-        )}
+      <div className="fc">Featured Categories</div>
+      <div id="cil">
+        {cate?.map((data) => {
+          return (
+            <div id="cateitems">
+              <Link id="bvnn" state={data} to={"/category/" + data.name}>
+                {data.name}
+              </Link>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

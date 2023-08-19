@@ -43,7 +43,7 @@ export default function Cart() {
             return (
               <div className="d-c">
                 <div className="opop">
-                  <img src={item.image} id="c-i"></img>
+                  <img src={item.images[0]} id="c-i"></img>
                 </div>
                 <div className="right-bot">
                   <div id="c-t">{item.title}</div>

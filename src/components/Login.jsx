@@ -25,7 +25,7 @@ export default function Login() {
     <div className="kico">
       <div>
         <form onSubmit={getcred} className="sform">
-          <div id="sti">sign in</div>
+          <div id="sti">Sign In</div>
           <div className="w1">
             <div className="headings">UserName</div>
             <input
