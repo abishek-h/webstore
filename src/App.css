@@ -598,7 +598,7 @@ body {
 stinp:focus {
   width: 20rem;
   height: 1.1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -662,16 +662,15 @@ stinp:focus {
 }
 .pcont {
   display: flex;
-  column-gap: 1.5rem;
+  column-gap: 1rem;
   padding-left: 2rem;
   min-height: 78vh;
-  padding: 1rem 0.7rem 0.7rem 0.7rem;
+  padding: 1rem 0.7rem 0.7rem 1.5rem;
   background-color: rgb(213, 211, 211);
   border-radius: 15px;
   flex-wrap: wrap;
   row-gap: 0.8rem;
   margin-bottom: 0.5rem;
-  justify-content: center;
 }
 .pro-king {
   display: flex;
