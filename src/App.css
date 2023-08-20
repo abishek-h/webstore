@@ -1,35 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=REM:wght@200;300;400;500&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
-::-webkit-scrollbar {
-  width: 0px;
-}
-#root {
-  display: flex;
-  flex-direction: column;
-  width: 98.5vw;
-  min-width: 620px;
-}
+
 #logo {
   width: 6rem;
   height: 5rem;
   object-fit: cover;
 }
+
 body {
-  display: flex;
-  justify-content: center;
-  padding-top: 0.7rem;
-  width: 100vw;
   margin: 0;
-  min-height: 98.5vh;
-  position: absolute;
+  padding: 0.5rem;
+  min-width: 1000px;
+  height: 100%;
 }
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 15px;
-  width: 98.5vw;
+  width: 100%;
   background: #ccdbfe;
+  min-width: 1000px;
 }
 #shop-name {
   font-size: 2.7rem;
@@ -72,6 +63,7 @@ body {
 .sbar,
 .sbar:focus {
   width: 100%;
+  min-width: 360px;
   outline: none;
   height: 2rem;
   border-top-left-radius: 25px;
@@ -97,7 +89,7 @@ body {
 
 .middle {
   display: flex;
-  width: 45vw;
+  min-width: 45vw;
 }
 .left-top {
   padding-right: 1rem;
@@ -158,8 +150,7 @@ body {
   font-family: "REM";
   font-weight: 300;
   font-size: 1rem;
-  text-align: justify;
-  text-justify: inter-word;
+  min-width: 800px;
 }
 #sn {
   border: 1px black solid;
@@ -275,7 +266,8 @@ footer {
   background-color: #ccdbfe;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 98.5vw;
+  width: 100%;
+  min-width: 1000px;
 }
 .login-buton {
   font-size: 0.95rem;
@@ -311,6 +303,7 @@ footer {
   padding: 1rem;
   border-radius: 10px;
   width: 1000px;
+  min-width: 600px;
 }
 #c-i {
   width: 140px;
@@ -435,9 +428,7 @@ footer {
 #notprice {
   text-decoration: line-through;
 }
-body {
-  background: white;
-}
+
 .buttons-a {
   display: flex;
   column-gap: 0.5rem;
@@ -463,12 +454,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 0.5rem;
-  width: 98.5vw;
+  width: 100%;
+  min-width: 1000px;
   background-color: #8fb3ff;
   color: black;
   border-radius: 15px;
-  height: 89%;
   margin-bottom: 0.5rem;
+  height: 87.5vh;
 }
 .slinks {
   text-decoration: none;
@@ -478,9 +470,10 @@ body {
 .uf-bot {
   background: #8fb3ff;
   color: black;
-  border-radius: 15px;
-  width: 98.5vw;
-  margin-bottom: 0.5rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  padding-bottom: 0.5rem;
 }
 .cart-cont-king {
   height: 88%;
@@ -509,8 +502,7 @@ body {
   flex-direction: column;
   margin-top: 0.5rem;
   display: flex;
-  width: 98.5vw;
-  height: 110%;
+  width: 100%;
   min-height: 45vh;
   border-radius: 15px;
   background-color: white;
@@ -565,14 +557,15 @@ body {
   row-gap: 0.5rem;
 }
 .kico {
-  width: 98.5vw;
-  height: 89%;
+  min-width: 1000px;
+  width: 100%;
+  min-height: 87vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0.7rem;
   border-radius: 15px;
-  background-color: rgb(213, 211, 211);
+
   margin-bottom: 0.5rem;
 }
 .sform {
@@ -583,12 +576,13 @@ body {
   background: white;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border: 1px black solid;
 }
 #sti {
   font-size: 1.5rem;
   font-family: "Montserrat";
   padding-bottom: 1rem;
-  color: black;
+  color: #d41d6d;
   font-weight: 500;
 }
 .headings {
@@ -660,17 +654,21 @@ stinp:focus {
   border-radius: 15px;
   color: black;
 }
+.flex-g {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.7rem;
+  column-gap: 1.2rem;
+  row-gap: 1.3rem;
+}
 .pcont {
   display: flex;
-  column-gap: 1rem;
-  padding-left: 2rem;
   min-height: 78vh;
-  padding: 1rem 0.7rem 0.7rem 1.5rem;
   background-color: rgb(213, 211, 211);
   border-radius: 15px;
-  flex-wrap: wrap;
-  row-gap: 0.8rem;
+  row-gap: 1.35rem;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 .pro-king {
   display: flex;
@@ -752,7 +750,7 @@ stinp:focus {
   border-radius: 15px;
 }
 #cil {
-  width: 97vw;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   row-gap: 3rem;
@@ -760,6 +758,7 @@ stinp:focus {
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
+  min-width: 1000px;
 }
 #bvnn {
   text-decoration: none;

@@ -4,15 +4,15 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import "../App.css";
 import { login } from "../globalvariables/username.js";
-import { useSelector } from "react-redux";
 
 export default function Login() {
   const [cred, setname] = useState({ username: "", password: "" });
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   const getcred = (e) => {
     e.preventDefault();
-    if (cred.uname === "" || cred.pass === "") {
+    if (cred.username === "" || cred.password === "") {
       alert("provide all the required info to continue");
     } else {
       dispatch(login({ username: cred.username, password: cred.password }));

@@ -41,7 +41,7 @@ export default function App() {
     localStorage.setItem("cart", JSON.stringify(items));
   }, [items]);
   return (
-    <>
+    <div className="ultra-cont">
       <div className="nav">
         <div className="left-top">
           <Link
@@ -116,6 +116,6 @@ export default function App() {
         <Route path="search" element={<Search />} />
         <Route path="*" element={<Err />} />
       </Routes>
-    </>
+    </div>
   );
 }

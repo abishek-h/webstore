@@ -38,36 +38,38 @@ export default function Cateitem() {
       )}
       {product.length > 1 && loade != true && (
         <div className="pcont">
-          {product?.map((data) => {
-            return (
-              <div className="item-cont">
-                <div>
-                  <img src={data.images[0]} className="imgdetail"></img>
-                </div>
-                <div className="bottom-area-item">
-                  <div className="title">{data.title}</div>
-                  <div className="price-holder">
-                    <span id="price">${data.price}</span>
+          <div className="flex-g">
+            {product?.map((data) => {
+              return (
+                <div className="item-cont">
+                  <div>
+                    <img src={data.images[0]} className="imgdetail"></img>
+                  </div>
+                  <div className="bottom-area-item">
+                    <div className="title">{data.title}</div>
+                    <div className="price-holder">
+                      <span id="price">${data.price}</span>
+                    </div>
+                  </div>
+                  <div className="buttons-a">
+                    <button
+                      className="butto12"
+                      onClick={() => {
+                        if (user === "") {
+                          alert("sign in");
+                        } else {
+                          addcart(data);
+                        }
+                      }}
+                    >
+                      Add to cart
+                    </button>
+                    <button className="butto22">buy now</button>
                   </div>
                 </div>
-                <div className="buttons-a">
-                  <button
-                    className="butto12"
-                    onClick={() => {
-                      if (user === "") {
-                        alert("sign in");
-                      } else {
-                        addcart(data);
-                      }
-                    }}
-                  >
-                    Add to cart
-                  </button>
-                  <button className="butto22">buy now</button>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       )}
     </div>
