@@ -27,18 +27,20 @@ export default function Category() {
     { name: "lighting", id: 20 },
   ];
   return (
-    <div className="ing-cont">
-      <div className="fc">Featured Categories</div>
-      <div id="cil">
-        {cate?.map((data) => {
-          return (
-            <div id="cateitems">
-              <Link id="bvnn" state={data} to={"/category/" + data.name}>
-                {data.name}
-              </Link>
-            </div>
-          );
-        })}
+    <div className="kin-cont">
+      <div className="ing-cont">
+        <div className="fc">Featured Categories</div>
+        <div id="cil">
+          {cate?.map((data) => {
+            return (
+              <div id="cateitems">
+                <Link id="bvnn" state={data} to={"/category/" + data.name}>
+                  {data.name}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
