@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { add } from "../globalvariables/cartSlice";
 import CircleLoader from "react-spinners/CircleLoader";
 import { useDispatch } from "react-redux";
@@ -7,8 +7,9 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 
 export default function Cateitem() {
+  const { item } = useParams();
   const locate = useLocation();
-  const name = locate.state?.name;
+  const name = item || locate.state?.name;
   const user = useSelector((state) => state.user.value.username);
   const [product, setproduct] = useState([]);
   const [loade, setloade] = useState(false);
@@ -30,7 +31,7 @@ export default function Cateitem() {
   }, []);
   return (
     <div>
-      <div className="pr">{name} </div>
+      <div className="pr">Results </div>
       {loade && (
         <div id="loader">
           <CircleLoader color={"#000000"} loading={loade} size={120} />

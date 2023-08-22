@@ -497,12 +497,25 @@ footer {
   width: 60rem;
   justify-content: space-around;
 }
+.kin-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  width: 99.9%;
+  min-width: 1000px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  min-height: 87.5vh;
+}
 .ing-cont {
   align-items: center;
   flex-direction: column;
-  margin-top: 0.5rem;
   display: flex;
-  width: 100%;
+  width: 99.8%;
   min-height: 45vh;
   border-radius: 15px;
   background-color: white;
@@ -565,7 +578,7 @@ footer {
   align-items: center;
   margin-top: 0.7rem;
   border-radius: 15px;
-
+  background-color: #8fb3ff;
   margin-bottom: 0.5rem;
 }
 .sform {
@@ -576,7 +589,6 @@ footer {
   background: white;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  border: 1px black solid;
 }
 #sti {
   font-size: 1.5rem;
