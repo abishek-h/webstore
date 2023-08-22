@@ -578,7 +578,6 @@ footer {
   align-items: center;
   margin-top: 0.7rem;
   border-radius: 15px;
-  background-color: #8fb3ff;
   margin-bottom: 0.5rem;
 }
 .sform {
@@ -589,6 +588,7 @@ footer {
   background: white;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border: 1px black solid;
 }
 #sti {
   font-size: 1.5rem;
