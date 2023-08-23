@@ -5,6 +5,7 @@ import CircleLoader from "react-spinners/CircleLoader";
 import { useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import Err from "./Err";
 
 export default function Cateitem() {
   const { item } = useParams();
@@ -12,13 +13,12 @@ export default function Cateitem() {
   const name = item || locate.state?.name;
   const user = useSelector((state) => state.user.value.username);
   const [product, setproduct] = useState([]);
-  const [loade, setloade] = useState(false);
+  const [loade, setloade] = useState(true);
   const dispatch = useDispatch();
   const addcart = (info) => {
     dispatch(add(info));
   };
   useEffect(() => {
-    setloade(true);
     fetch(`https://dummyjson.com/products/category/${name}`)
       .then((res) => res.json())
       .then((res) => {
@@ -29,6 +29,9 @@ export default function Cateitem() {
         console.log(err);
       });
   }, []);
+  if (product.length == 0 && !loade) {
+    return <Err />;
+  }
   return (
     <div>
       <div className="pr">Results </div>
